@@ -276,125 +276,126 @@ export default function Redux_mny() {
                 </center>
                 <div>
                     <img className='left_img' src="/img-1.png" alt="" />
-                    {/* <img src="./public/img-2.png" alt="" />
-                <img src="./public/img-3.png" alt="" /> */}
                     <img className='right_img' src="/img-4.png" alt="" />
-                    {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIpVz90k3-HGcr4jQtBiLvj5RbQLKmVxzhDP7egOMhMATs6EK_" alt="" /> */}
-                    {/* <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnw2cYrbUtHFRtAzTDiNQZELKanu8SSY22j66ttkXU5GmdcO_C" alt="" /> */}
-                    {/* <img src="data:image/jpeg;base64,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" alt="" /> */}
                 </div>
             </div>
 
 
-            <div className="left">
+            <div className="second_page">
 
-                {
-                    showWallet && (
-                        <div className="wallet">
-                            <h2>Check your wallet..👜</h2>
-                            <h3>{count_money} ₹ </h3>
-                            <button onClick={add_balance} >Add balance</button>
-                        </div>
+                <div className="left">
 
-                    )
-                }
+                    {
+                        showWallet && (
+                            <div className="wallet">
+                                <h2>Check your wallet..👜</h2>
+                                <h3>{count_money} ₹ </h3>
+                                <button onClick={add_balance} >Add balance</button>
+                            </div>
 
-                {
-                    showInput && (
-                        <div id='show_Input' className='show'>
-                            <input type="number" placeholder='Enter Your Wallet Balance' value={wallet} onChange={(e) => setWallet(e.target.value)} />
-                            <button onClick={handleWallet} >Add Money</button>
-                        </div>
-                    )
-                }
+                        )
+                    }
 
-            </div>
-
-
-            <div className="right">
-
-                <div>
-
-                    <div className="pro">
-
-                        {/* <input type="text" ref={InputRef} placeholder='Enter Product Name' value={cartName} onChange={(e) => setCartName(e.target.value)} /> */} <br /><br />
-                        <label htmlFor="">Select Products</label> <br />
-                        <select ref={InputRef} value={cartName} onChange={(e) => setCartName(e.target.value)} name="products" id="products">
-                            <option value="">Select Products</option>
-                            <option value="Dark Chocolate">Dark Chocolate</option>
-                            <option value="Milk Chocolate">Milk Chocolate</option>
-                            <option value="White Chocolate">White Chocolate</option>
-                            <option value="Hazelnut Chocolate">Hazelnut Chocolate</option>
-                            <option value="Mint Chocolate">Mint Chocolate</option>
-                            <option value="Almond Chocolate">Almond Chocolate</option>
-                            <option value="Caramel Chocolate">Caramel Chocolate</option>
-                            <option value="Raspberry Chocolate">Raspberry Chocolate</option>
-                            <option value="Kitkat Chocolate">Kitkat Chocolate</option>
-                            <option value="Cupcake">Cupcake</option>
-                            <option value="Donut">Donut</option>
-                            <option value="Oreo Silk Chocolate">Oreo Silk Chocolate</option>
-                        </select>
-
-                        <input type="number" placeholder='Enter price' value={cartMoney} onChange={(e) => setCartMoney(e.target.value)} /> <br />
-                        <button onClick={delete_mny}>Add Products</button>
-                    </div> <br />
+                    {
+                        showInput && (
+                            <div id='show_Input' className='show'>
+                                <input type="number" placeholder='Enter Your Wallet Balance' value={wallet} onChange={(e) => setWallet(e.target.value)} />
+                                <button onClick={handleWallet} >Add Money</button>
+                            </div>
+                        )
+                    }
 
 
-                </div>
+                    <div className="right">
 
+                        <div className="pro">
+                            <br />
+                            <label htmlFor="">Select Products</label> <br />
+                            <select ref={InputRef} value={cartName} onChange={(e) => setCartName(e.target.value)} name="products" id="products">
+                                <option value="">Select Products</option>
+                                <option value="Dark Chocolate">Dark Chocolate</option>
+                                <option value="Milk Chocolate">Milk Chocolate</option>
+                                <option value="White Chocolate">White Chocolate</option>
+                                <option value="Hazelnut Chocolate">Hazelnut Chocolate</option>
+                                <option value="Mint Chocolate">Mint Chocolate</option>
+                                <option value="Almond Chocolate">Almond Chocolate</option>
+                                <option value="Caramel Chocolate">Caramel Chocolate</option>
+                                <option value="Raspberry Chocolate">Raspberry Chocolate</option>
+                                <option value="Kitkat Chocolate">Kitkat Chocolate</option>
+                                <option value="Cupcake">Cupcake</option>
+                                <option value="Donut">Donut</option>
+                                <option value="Oreo Silk Chocolate">Oreo Silk Chocolate</option>
+                            </select>
 
-                {
-                    matchedChocolate && (
+                            <input type="number" placeholder='Enter price' value={cartMoney} onChange={(e) => setCartMoney(e.target.value)} /> <br /> <br />
+                            <button onClick={delete_mny}>Add Products</button>
+                        </div> <br />
 
-                        <div className='selected_choco'>
-                            <h2>Selected Chocolate: {matchedChocolate.name}</h2>
-                            <img src={matchedChocolate.image} width='200' alt="" />
-                            <p>{matchedChocolate.description}</p>
-                        </div>
-
-                    )
-                }
-
-
-                {
-                    <div className='table'>
-
-                        {
-                            productList.length > 0 &&
-                            <table width='70%' border='1' style={{ borderColor: 'rgba(255, 255, 255, 0.35)' }}>
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    {
-                                        productList.map((e, i) => {
-                                            return (
-                                                <tr key={i}>
-                                                    <th>{e.cartName}</th>
-                                                    <th>{e.cartMoney}</th>
-                                                </tr>
-                                            )
-                                        })
-                                    }
-
-                                    <tr style={{ color: 'rgb(152, 190, 138)' }}>
-                                        <th>Payble Amount : </th>
-                                        <th>{calculate_Price()}</th>
-                                    </tr>
-                                </tbody>
-
-                            </table>
-
-                        }
                     </div>
-                }
+
+
+                </div>
+
+
+                <div className="chocolate-container">
+
+                    {
+                        matchedChocolate && (
+
+                            <div className='selected_choco'>
+                                <h2>Selected Chocolate: {matchedChocolate.name}</h2>
+                                <img src={matchedChocolate.image} width='200' alt="" />
+                                <p>{matchedChocolate.description}</p>
+                            </div>
+
+                        )
+                    }
+
+
+                    {
+                        <div className='table'>
+
+                            {
+                                productList.length > 0 &&
+                                <table width='70%' border='1' style={{ borderColor: 'rgba(255, 255, 255, 0.35)' }}>
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        {
+                                            productList.map((e, i) => {
+                                                return (
+                                                    <tr key={i}>
+                                                        <th>{e.cartName}</th>
+                                                        <th>{e.cartMoney}</th>
+                                                    </tr>
+                                                )
+                                            })
+                                        }
+
+                                        <tr style={{ color: 'rgb(152, 190, 138)' }}>
+                                            <th>Payble Amount : </th>
+                                            <th>{calculate_Price()}</th>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            }
+                        </div>
+                    }
+
+                </div>
 
 
             </div>
+
+
+
 
 
         </div>

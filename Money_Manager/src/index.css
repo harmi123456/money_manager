@@ -1,35 +1,28 @@
-.main{
+.main {
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.666)), url("https://cdn.pixabay.com/photo/2015/03/26/23/09/cake-pops-693645_640.jpg");
-  /* background: url("https://cdn.pixabay.com/photo/2015/03/26/23/09/cake-pops-693645_640.jpg"); */
-  /* background: url("https://media.cgtrader.com/variants/gZ4rECvZtHKG4X9KoXjPLbgr/508c09fe26e63b93baec6d888aa2950650a509b5e04f2f03a4f2af52a04363ea/Donut%20001.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
 }
 
-.left{
+.left {
   height: 500px;
   width: 300px;
   padding: 20px;
 }
 
-
 .welcome {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background: linear-gradient(rgba(0, 0, 0, 0.623),rgba(0, 0, 0, 0.517)), url("https://cdn.pixabay.com/photo/2023/09/19/06/02/ai-generated-8261856_1280.jpg");
-  /* background: url("https://cdn.pixabay.com/photo/2017/11/20/16/59/praline-2966091_640.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.517)), url("https://cdn.pixabay.com/photo/2023/09/19/06/02/ai-generated-8261856_1280.jpg");
   background-size: cover;
   padding: 20px;
   text-align: center;
   transition: opacity 5s ease, visibility 0s 1s;
-  opacity: 1; 
+  opacity: 1;
   visibility: visible;
 }
 
@@ -41,27 +34,36 @@
 
 
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .welcome h1 {
-  overflow: hidden; 
+  overflow: hidden;
   color: rgb(223, 121, 121);
-  white-space: nowrap; 
+  white-space: nowrap;
   margin-top: 200px;
-  width: 0; 
-  animation: typewriter 4s steps(30) 1s forwards, 
-             blinkTextCursor 0.75s steps(30) infinite;
+  width: 0;
+  animation: typewriter 4s steps(30) 1s forwards,
+    blinkTextCursor 0.75s steps(30) infinite;
 }
-.welcome h3, h2{
+
+.welcome h3,
+h2 {
   color: rgb(152, 190, 138);
 }
-.left_img{
+
+.left_img {
   float: left;
   margin-left: 100px;
 }
-.right_img{
+
+.right_img {
   float: right;
   height: 500px;
   position: relative;
@@ -70,15 +72,32 @@
 }
 
 
-.left h3{
+.second_page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left {
+  height: 200px;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left h3 {
   color: rgb(158, 227, 133);
   font-size: 30px;
 }
-.left h2{
+
+.left h2 {
   color: rgb(158, 227, 133);
 }
 
-button{
+button {
   padding: 8px;
   border-radius: 10px 20px 5px 10px;
   background-color: rgba(229, 192, 118, 0.619);
@@ -87,21 +106,21 @@ button{
   letter-spacing: 2px;
 }
 
-.wallet{
-  background: linear-gradient(rgba(0, 0, 0, 0.551),rgba(0, 0, 0, 0.638)), url("https://www.shutterstock.com/image-photo/leather-wallet-indian-currency-260nw-1935373474.jpg");
+.wallet {
+  background: linear-gradient(rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.638)), url("https://www.shutterstock.com/image-photo/leather-wallet-indian-currency-260nw-1935373474.jpg");
   height: 180px;
   background-size: cover;
   border-radius: 10px;
   padding: 10px;
 }
 
-#show_Input{
+#show_Input {
   height: 200px;
   border: 2px solid white;
   border-radius: 10px;
-  width: 50%;
+  width: 30%;
   position: relative;
-  left: 50px;
+  left: 0px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -109,34 +128,34 @@ button{
   background: url("https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505_640.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0; /* Initially hidden */
-  transform: scale(0.5); /* Initially small */
+  opacity: 0;
+  transform: scale(0.5);
   transition: opacity 0.5s ease, transform 0.5s ease;
 
-  input{
+  input {
     padding: 8px;
     height: 50px;
     width: 20%;
     border-radius: 5px;
     border: 1px solid transparent;
-    /* background-color: transparent; */
   }
 }
 
 #show_Input.show {
-  opacity: 1; /* Fully visible */
-  transform: scale(1); /* Full size */
+  opacity: 1;
+  transform: scale(1);
   animation: popOut 0.5s ease forwards;
 }
 
 @keyframes popOut {
   0% {
-    transform: scale(0.5); /* Start small */
-    opacity: 0; /* Hidden */
+    transform: scale(0.5);
+    opacity: 0;
   }
+
   100% {
-    transform: scale(1); /* Full size */
-    opacity: 1; /* Fully visible */
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -151,52 +170,142 @@ button{
 }
 
 
-.right{
+.right {
   height: 500px;
-  width: 30%;
+  width: 50%;
   padding: 20px;
-  label{
+
+  label {
     font-size: 20px;
     color: rgb(246, 176, 176);
   }
-  #products , input{
+
+  #products,
+  input {
     padding: 8px;
-    margin: 7px;
+    /* position: relative; */
+    top: -10px;
+    margin: 5px;
     border-radius: 5px;
     border: transparent;
     background-color: rgba(204, 205, 204, 0.805);
   }
-  button{
-    margin-top: 38px;
-  }
-  table{
-    color: white;
-  }
+
+
 }
 
-.pro{
+table {
+  color: white;
+}
+
+.pro {
   height: 180px;
   border: 1px solid rgba(255, 255, 255, 0.41);
   background-size: cover;
   border-radius: 10px;
   padding: 10px;
+  margin-top: -20px;
 }
-.selected_choco{
+
+
+
+.chocolate-container {
   height: 250px;
-  /* border: 2px solid red; */
+  width: 50%;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.selected_choco {
+  height: 250px;
   position: relative;
-  left: -350px;
-  p{
+  left: 50px;
+
+  p {
     color: white;
   }
 }
 
-.table{
+.table {
   position: relative;
-  top: -200px;
-  left: 50px;
+  width: 50%;
   font-weight: lighter;
-  thead{
+
+  thead {
     color: rgb(246, 176, 176);
+  }
+}
+
+
+@media (max-width: 380px) {
+
+  .welcome h1 {
+    font-size: 15px;
+  }
+
+  .welcome{
+    height: 1200px;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .welcome h3 {
+    font-size: 13px;
+  }
+
+  .left_img {
+    left: 0px;
+    top: -20px;
+  }
+
+  .right_img {
+    display: none;
+  }
+
+
+
+
+  .left {
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    margin-top: -100px;
+  }
+
+  .wallet {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .show{
+    height: 500px;
+  }
+  #show_Input {
+    left: 50px;
+    height: 600px;
+  }
+
+  .right {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .second_page{
+    height: 1200px;
+  }
+
+  .chocolate-container{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .table{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
   }
 }
